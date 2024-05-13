@@ -15,13 +15,14 @@ Este proyecto es una implementación del patrón de diseño Builder en Java. El 
 
 Para crear una instancia de `MediaItem`, puedes usar el patrón Builder de la siguiente manera:
 
-```java
+``` java
 MediaItem item = new MediaItem.Builder()
     .setTitle("Some Title")
     .setAuthor("Some Author")
     .setYear(2022)
     .setMedia(new Book())
     .build();
+```
 
 # Entrega 2: Patrones de Estructuración
 
