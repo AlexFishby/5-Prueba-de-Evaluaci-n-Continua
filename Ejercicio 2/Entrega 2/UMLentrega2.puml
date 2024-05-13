@@ -1,0 +1,22 @@
+@startuml
+interface MediaComponent {
+  +display() : void
+}
+
+class MediaCollection {
+  -components : List<MediaComponent>
+  +addComponent(component : MediaComponent) : void
+  +display() : void
+}
+
+interface MediaFormat {
+  +display() : void
+}
+
+interface Observer {
+  +update(message : String) : void
+}
+
+MediaCollection ..> MediaComponent : implements
+MediaFormat ..> MediaComponent : implements
+@enduml
