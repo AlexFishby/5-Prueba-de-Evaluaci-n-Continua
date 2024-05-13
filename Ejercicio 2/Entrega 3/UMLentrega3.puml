@@ -1,0 +1,49 @@
+@startuml
+class MediaItem1 {
+  -title : String
+  -author : String
+  -year : int
+  -state : State
+  +MediaItem1(title : String, author : String, year : int)
+  +display() : void
+  +download() : void
+  +getTitle() : String
+  +setTitle(title : String) : void
+  +getAuthor() : String
+  +setAuthor(author : String) : void
+  +getYear() : int
+  +setYear(year : int) : void
+  +changeState(state : State) : void
+  +handleRequest() : void
+}
+
+interface State {
+  +handleRequest() : void
+}
+
+class AvailableState {
+  -mediaItem : MediaItem1
+  +AvailableState(mediaItem : MediaItem1)
+  +handleRequest() : void
+}
+
+class BorrowedState {
+  -mediaItem : MediaItem1
+  +BorrowedState(mediaItem : MediaItem1)
+  +handleRequest() : void
+}
+
+class ReservedState {
+  -mediaItem1 : MediaItem1
+  +ReservedState(mediaItem1 : MediaItem1)
+  +handleRequest() : void
+}
+
+MediaItem1 "1" *-down- "1" State
+State <|.. AvailableState
+State <|.. BorrowedState
+State <|.. ReservedState
+AvailableState o-- MediaItem1
+BorrowedState o-- MediaItem1
+ReservedState o-- MediaItem1
+@enduml
