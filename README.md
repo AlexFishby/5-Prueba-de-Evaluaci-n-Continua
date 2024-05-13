@@ -1,5 +1,7 @@
 # 5: Prueba de Evaluacion Continua
 
+Link: https://github.com/AlexFishby/5-Prueba-de-Evaluaci-n-Continua.git
+
 # Entrega 1
 
 Este proyecto es una implementación del patrón de diseño Builder en Java. El proyecto consta de varias clases e interfaces que representan diferentes tipos de medios, como libros, revistas y periódicos.
