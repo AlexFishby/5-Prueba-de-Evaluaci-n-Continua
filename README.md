@@ -9,7 +9,7 @@ Este proyecto es una implementación del patrón de diseño Builder en Java. El 
 - `Media`: Esta es una interfaz que define un método `display()`.
 - `Book`, `Magazine`, `Newspaper`: Estas son clases que implementan la interfaz `Media` y proporcionan su propia implementación del método `display()`.
 - `MediaFactory`: Esta es una clase que se utiliza para crear instancias de diferentes tipos de medios.
-- `MediaItem`: Esta es una clase que utiliza el patrón de diseño Builder. Contiene un título, un autor, un año y un objeto `Media`. También tiene una clase interna `Builder` que se utiliza para crear instancias de `MediaItem`.
+- `MediaItem1`: Esta es una clase que utiliza el patrón de diseño Builder. Contiene un título, un autor, un año y un objeto `Media`. También tiene una clase interna `Builder` que se utiliza para crear instancias de `MediaItem1`. Localizada en el directorio "Común" ya que se usara en los futuros directorios.
 
 ## Cómo usar
 
