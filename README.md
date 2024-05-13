@@ -58,3 +58,26 @@ El patrón Adapter se utiliza para integrar diferentes formatos de archivos sin 
 
 ### Observer
 El patrón Observer se utiliza para notificar a los usuarios sobre nuevos lanzamientos o actualizaciones en sus suscripciones. `User` implementa `Observer` y se actualiza cuando se llama al método `update()`.
+
+# Entrega 3
+
+Este proyecto es la tercera entrega de nuestro curso de programación. Está escrito en Java y utiliza el patrón de diseño de estado para manejar el estado de los objetos `MediaItem1`.
+
+## Clases
+
+El proyecto consta de las siguientes clases:
+
+1. `MediaItem1`: Esta es la clase principal que representa un artículo de medios. Tiene propiedades para el título, el autor y el año, así como un estado que representa el estado actual del artículo de medios.
+
+2. `State`: Esta es una interfaz que define un método `handleRequest()` que las clases de estado deben implementar.
+
+3. `AvailableState`, `BorrowedState`, `ReservedState`: Estas son las clases de estado que implementan la interfaz `State`. Cada una de estas clases representa un estado posible para un `MediaItem1` y tiene una lógica específica para manejar las solicitudes.
+
+## Relaciones entre clases
+
+- `MediaItem1` tiene una relación de composición con `State`. Esto significa que `MediaItem1` tiene un estado que puede ser cualquier clase que implemente la interfaz `State`.
+
+- `AvailableState`, `BorrowedState` y `ReservedState` implementan la interfaz `State` y, por lo tanto, tienen una relación de realización con `State`.
+
+- `AvailableState`, `BorrowedState` y `ReservedState` también tienen una relación de asociación con `MediaItem1` porque tienen una referencia a un `MediaItem1`.
+
