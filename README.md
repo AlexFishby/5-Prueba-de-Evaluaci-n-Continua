@@ -83,3 +83,11 @@ El proyecto consta de las siguientes clases:
 
 - `AvailableState`, `BorrowedState` y `ReservedState` también tienen una relación de asociación con `MediaItem1` porque tienen una referencia a un `MediaItem1`.
 
+Entrega 4
+
+Este proyecto es la cuarta entrega del ejercicio 2. En este proyecto, se implementa un sistema de gestión de elementos multimedia (MediaItems) con una interfaz gráfica de usuario.  
+Estructura del proyecto
+El proyecto consta de varias clases:  
+MediaItem1: Esta clase representa un elemento multimedia. Cada elemento multimedia tiene un título, un autor, un año, un objeto Book y un estado. Esta clase también proporciona un método display() para mostrar la información del elemento multimedia.  
+MediaControlador: Esta clase es el controlador en el patrón de diseño MVC. Gestiona una lista de elementos multimedia y proporciona métodos para mostrar un elemento multimedia específico.  
+Vista: Esta clase es la vista en el patrón de diseño MVC. Proporciona una interfaz gráfica de usuario para interactuar con los elementos multimedia.
